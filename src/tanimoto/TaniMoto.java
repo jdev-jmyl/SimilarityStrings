@@ -48,17 +48,15 @@ public class TaniMoto {
         if (sizeCollection > 2) {
             for (int i = 0; i < sizeCollection - 1; i++) {
                 for (int j = i + 1; j <= sizeCollection -1; j++) {
-                    System.out.println("сходство текста " 
+                    System.out.println("similarity " 
                             + i + " и " + j + " = " 
-                    + similarity(list.get(i), list.get(j)) 
-                            + "\n compareToIgnoreCase = " + list.get(i).compareToIgnoreCase(list.get(j)));
+                    + similarity(list.get(i), list.get(j)));
                 }
             }
         } else if(sizeCollection == 2){
-            System.out.println("сходство текста " 
+            System.out.println("similarity " 
                             + 0 + " и " + 1 + " = " 
-                    + similarity(list.get(0), list.get(1)) 
-                            + "\n compareToIgnoreCase = " + list.get(0).compareToIgnoreCase(list.get(1)));
+                    + similarity(list.get(0), list.get(1)));
         } else {
             System.out.println("There are no elements for comparison!!");
         }
